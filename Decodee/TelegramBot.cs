@@ -54,8 +54,7 @@ namespace Decodee
                 {
                     await SendWelcomeMessage(update);
                 }
-
-                if (update.Message.Text.Length != 4)
+                else if (update.Message.Text.Length != 4)
                 {
                     Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")} ERROR: Chat ID: {update.Message.Chat.Id}: Invalid ICAO '{update.Message.Text.ToUpper()}' | Internal Error #1");
                     await botClient.SendTextMessageAsync(update.Message.Chat.Id, $"Please enter a valid ICAO");
