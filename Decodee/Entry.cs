@@ -13,8 +13,6 @@ namespace Decodee
         {
             TelegramBot bot = new TelegramBot();
             await bot.Start();
-
-            string intext = Console.ReadLine().ToUpper();
         }
 
     }

@@ -214,9 +214,13 @@ public class MetarDecoder
             string windSpeedFirst = match.Groups["windSpeedFirst"].Value;
             string windSpeedLast = match.Groups["windSpeedLast"].Value;
 
-            if (windSpeed.StartsWith("0"))
+            if (windSpeedFirst.StartsWith("0"))
             {
-                windSpeed = match.Groups["windSpeed"].Value.TrimStart('0');
+                windSpeedFirst = match.Groups["windSpeedFirst"].Value.TrimStart('0');
+            }
+            if (windSpeedLast.StartsWith("0"))
+            {
+                windSpeedLast = match.Groups["windSpeedLast"].Value.TrimStart('0');
             }
 
             if (match.Groups["windUnit"].Value.Contains("KT"))
