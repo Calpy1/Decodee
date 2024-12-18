@@ -118,6 +118,7 @@ namespace Decodee
                         //{
                         //    Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")} ERROR: Chat ID: {update.Message.Chat.Id}: {ex.Message}");
                         //    Console.WriteLine(line.Trim());
+                        //
                         //}
                     }
 
