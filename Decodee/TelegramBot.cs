@@ -14,8 +14,8 @@ namespace Decodee
 {
     internal class TelegramBot
     {
-        private readonly string _token = "YOUR_BOT_TOKEN_HERE";
-        private readonly long _adminChatId = YOUR_ID_HERE;
+        private readonly string _token = "YOUR_TOKEN";
+        private readonly long _adminChatId = "YOUR_ID";
         private long _chatId;
         private string _chatText;
         private readonly TelegramBotClient _botClient;
@@ -96,7 +96,7 @@ namespace Decodee
                                 if (resultMetar != null)
                                 {
                                     Console.WriteLine($"[{DateTime.Now.ToString("HH:mm:ss")}] INFO: Chat ID: {_chatId}: '{_chatText.ToUpper()} 'Status: COMPLETED");
-                                    await SendDebugMessageAsync($"[{DateTime.Now.ToString("HH:mm:ss")}] INFO: Chat ID: {_chatId}: '{_chatText.ToUpper()} 'Status: COMPLETED");
+                                    await SendDebugMessageAsync($"[{DateTime.Now.ToString("HH:mm:ss")}] INFO: Chat ID: {_chatId}: '{_chatText.ToUpper()}'Status: COMPLETED");
                                 }
                             }
                         }
