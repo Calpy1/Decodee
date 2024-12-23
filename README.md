@@ -6,9 +6,9 @@ Features
     Retrieve METAR Reports: The bot can fetch the latest METAR reports for any airport by its ICAO code.
     Decode METAR Reports: The bot decodes METAR reports into a human-readable format, explaining weather conditions, visibility, temperature, wind speed, and more.
     User-friendly: Users can easily interact with the bot via Telegram to get METAR reports in seconds.
-
-Prerequisites
-
+    
+    https://t.me/metar_helper_bot
+    
 Before running the bot, ensure you have the following installed:
 
     .NET SDK (any version compatible with C# 7.0 or later)
