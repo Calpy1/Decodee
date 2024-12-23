@@ -1,4 +1,5 @@
-METAR Telegram Bot	
+METAR Telegram Bot
+
 https://t.me/metar_helper_bot
 
 This Telegram bot, written in C#, allows users to retrieve and decode METAR weather reports. METAR is a standard format for reporting weather conditions, primarily used in aviation for airports and weather stations.
